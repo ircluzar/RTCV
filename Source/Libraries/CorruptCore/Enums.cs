@@ -1,16 +1,5 @@
 namespace RTCV.CorruptCore
 {
-    public enum BlastRadius
-    {
-        SPREAD,
-        CHUNK,
-        BURST,
-        NORMALIZED,
-        PROPORTIONAL,
-        EVEN,
-        NONE
-    }
-
     public enum BlastUnitSource
     {
         VALUE,

@@ -31,31 +31,10 @@ namespace RTCV.UI
 
         private void cbBlastRadius_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (cbBlastRadius.SelectedItem.ToString())
+            var algorithm = BlastRadius.GetFromString(cbBlastRadius.SelectedItem.ToString());
+            if (algorithm != null)
             {
-                case "SPREAD":
-                    CorruptCore.RtcCore.Radius = BlastRadius.SPREAD;
-                    break;
-
-                case "CHUNK":
-                    CorruptCore.RtcCore.Radius = BlastRadius.CHUNK;
-                    break;
-
-                case "BURST":
-                    CorruptCore.RtcCore.Radius = BlastRadius.BURST;
-                    break;
-
-                case "NORMALIZED":
-                    CorruptCore.RtcCore.Radius = BlastRadius.NORMALIZED;
-                    break;
-
-                case "PROPORTIONAL":
-                    CorruptCore.RtcCore.Radius = BlastRadius.PROPORTIONAL;
-                    break;
-
-                case "EVEN":
-                    CorruptCore.RtcCore.Radius = BlastRadius.EVEN;
-                    break;
+                CorruptCore.RtcCore.Radius = algorithm;
             }
         }
 

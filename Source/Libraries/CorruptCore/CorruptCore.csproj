@@ -115,7 +115,9 @@
     <Compile Include="MemoryBanks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BlastGeneratorProto.cs" />
+    <Compile Include="BlastInfo.cs" />
     <Compile Include="BlastLayer.cs" />
+    <Compile Include="BlastRadius.cs" />
     <Compile Include="BlastTarget.cs" />
     <Compile Include="BlastTools.cs" />
     <Compile Include="BlastUnit.cs" />
